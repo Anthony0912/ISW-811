@@ -16,5 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/workshop2', function () {
-    return view('workshop2');
+    $name =  request('name');
+    return view('workshop2',[
+        'name' => $name,
+    ]);
 });

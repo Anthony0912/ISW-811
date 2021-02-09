@@ -8,5 +8,6 @@
 </head>
 <body>
     <h2>Workshop 2</h2>
+    <h2>{{ $name }}</h2>
 </body>
 </html>
