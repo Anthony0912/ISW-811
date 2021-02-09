@@ -24,7 +24,7 @@
 
 ```
 
-    ![alt](./img/14.png "Routing to Controllers")
+![alt](./img/14.png "Routing to Controllers")
 
 5.Este seria el resultado
 ![alt](./img/15.png "Routing to Controllers")
