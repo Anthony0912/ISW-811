@@ -12,4 +12,6 @@
 
 [Controllers Techniques](./docs/controllersTechniques/menuControllersTechniques.md)
 
+[Eloquent](./docs/eloquent/menuEloquent.md)
+
 [Link del repositorio](https://github.com/Anthony0912/ISW-811/tree/master/Buster/site/lfts.isw811.xyz)

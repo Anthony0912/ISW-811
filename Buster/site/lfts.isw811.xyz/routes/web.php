@@ -50,3 +50,11 @@ Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/{article}', 'ArticlesController@show')->name('articles.show');
 Route::get('/articles/{article}/edit', 'ArticlesController@edit');
 Route::get('/articles/{article}', 'ArticlesController@update');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
