@@ -49,3 +49,5 @@
 6.  Asi quedaria la vista final
 
     ![alt](../img/39.png "Layout Pages")
+
+[Regresar al menu de views](./menuViews.md)

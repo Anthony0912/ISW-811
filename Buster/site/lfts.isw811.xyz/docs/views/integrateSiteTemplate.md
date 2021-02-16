@@ -13,3 +13,5 @@
 4. Asi quedaria nuestro templade.
 
     ![alt](../img/42.png "Integrate site template")
+
+[Regresar al menu de views](./menuViews.md)

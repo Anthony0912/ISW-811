@@ -44,3 +44,9 @@ Route::get('/posts/{post}', function ($post) {
 });
 
 Route::get('/postsdb/{post}', 'PostsController@show');
+
+
+Route::get('/articles', 'ArticlesController@index');
+Route::get('/articles/{article}', 'ArticlesController@show');
+Route::get('/articles/{article}/edit', 'ArticlesController@edit');
+Route::get('/articles/{article}', 'ArticlesController@update');

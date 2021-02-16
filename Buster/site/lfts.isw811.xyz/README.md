@@ -6,4 +6,6 @@
 
 [Layout Pages](./docs/views/layoutPages.md)
 
+[Forms](./docs/forms/menuForms.md)
+
 [Link del repositorio](https://github.com/Anthony0912/ISW-811/tree/master/Buster/site/lfts.isw811.xyz)
