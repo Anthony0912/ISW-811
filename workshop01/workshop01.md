@@ -197,7 +197,7 @@
 25. Antes de conectarnos para pasar el zip a la maquina local debemos cambiar una confirguracion dentro sshd_config
 
     ```bash
-     eval "$(ssh-agent -s)"
+     eval $(ssh-agent)
      sudo nano /etc/ssh/sshd_config
      sudo service ssh restart
     ```

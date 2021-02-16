@@ -35,4 +35,4 @@ Route::get('/posts/{post}', function ($post) {
     ]);
 });
 
-Route::get('/posts1/{post}', 'PostsController@show');
+Route::get('/postsdb/{post}', 'PostsController@show');

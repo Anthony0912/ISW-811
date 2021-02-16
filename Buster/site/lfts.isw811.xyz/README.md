@@ -1,9 +1,7 @@
-# Workshop 1
+# Workshop 2 - Laravel From The Scratch
 
-[Routing](./docs/routing.md)
+[Routing](./docs/routing/menuRouting.md)
 
-[Pass Request Data to Views](./docs/passRequestDataToViews.md)
-
-[Routing to Controllers](./docs/routingToControllers.md)
+[Database Access](./docs/dbAccess/menuDbAccess.md)
 
 [Link del repositorio](https://github.com/Anthony0912/ISW-811/tree/master/Buster/site/lfts.isw811.xyz)
