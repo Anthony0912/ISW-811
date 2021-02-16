@@ -55,6 +55,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/logout', function () {
+    auth()->logout();
+    return 'You are now logout out';
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

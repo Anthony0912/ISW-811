@@ -14,4 +14,8 @@
 
 [Eloquent](./docs/eloquent/menuEloquent.md)
 
+[Authentication](./docs/auth/menuAuth.md)
+
+[Core Concepts](./docs/coreConcepts/menuCore.md)
+
 [Link del repositorio](https://github.com/Anthony0912/ISW-811/tree/master/Buster/site/lfts.isw811.xyz)
