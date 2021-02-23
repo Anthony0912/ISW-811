@@ -18,4 +18,8 @@
 
 [Core Concepts](./docs/coreConcepts/menuCore.md)
 
+# Workshop 4 - Laravel From The Scratch
+
+[Mail](./docs/mail/menu_mail.md)
+
 [Link del repositorio](https://github.com/Anthony0912/ISW-811/tree/master/Buster/site/lfts.isw811.xyz)
