@@ -179,11 +179,40 @@ group by p.product_name, i.transaction_type;
 ![alt](./images/8.png "Challenge #8")
 
 ```bash
-select p.product_code as 'Codigo', p.product_name as 'Producto',
-if(i.transaction_type = 1, @ent:=sum(i.transaction_type), 0) as 'Entradas',
-if(i.transaction_type > 1, @sal:=sum(i.transaction_type), 0) as 'Salidas',
-abs(@ent - @sal) as 'Disponible' from products p
-inner join inventory_transactions i on p.id = i.product_id
-group by p.product_code;
+select
+    p.product_code as 'Codigo',
+    p.product_name as 'Producto',
+    sum(
+        if(
+            i.transaction_type = 1,
+            i.quantity,
+            0
+        )
+    ) as 'Ingresos',
+    sum(
+        if(
+            i.transaction_type > 1,
+            i.quantity,
+            0
+        )
+    ) as 'Salidas',
+    sum(
+        if(
+            i.transaction_type = 1,
+            i.quantity,
+            0
+        )
+    ) - sum(
+        if(
+            i.transaction_type > 1,
+            i.quantity,
+            0
+        )
+    ) as 'Disponible'
+from
+    products p
+    inner join inventory_transactions i on p.id = i.product_id
+group by
+    i.product_id;
 
 ```
