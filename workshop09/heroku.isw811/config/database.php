@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Str;
 
+$url = parse_url(getenv("DATABASE_URL"));
+
 return [
 
     /*
@@ -34,6 +36,21 @@ return [
     */
 
     'connections' => [
+
+        'pgsql-hobby-dev' => [
+            'driver' => 'pgsql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST', $url["host"]),
+            'port' => env('DB_PORT', $url["port"]),
+            'database' => env('DB_DATABASE', substr($url["path"], 1)),
+            'username' => env('DB_USERNAME', $url["user"]),
+            'password' => env('DB_PASSWORD', $url["pass"]),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
@@ -123,7 +140,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
